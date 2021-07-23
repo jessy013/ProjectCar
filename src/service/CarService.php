@@ -2,7 +2,8 @@
 namespace App\service;
 
 use App\Entity\Car;
-use Doctrine\orm\EntityManagerInterface;
+use Doctrine\ORM\EntityManagerInterface;
+
 
 class CarService
 {
@@ -37,9 +38,18 @@ public function getCar($pId)
         {
             $find = true;
             $Car = $this-> _listCar[$i];
-        }
-        $i++;
-        
 
+        }
+     
+        $i++;
+    }   
+    return ['found'=>$find,'car'=>$Car];
+}
+
+public function addCar($pCar)
+{
+    array_push($this->_listCar,$pCar);
+    $this->_entityManager->persist($pCar);
+    $this->_entityManager->flush($pCar);
     }
 }

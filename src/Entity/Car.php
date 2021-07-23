@@ -89,4 +89,11 @@ class Car
 
         return $this;
     }
+    function __construct($pName,$pCreator,$pCategorie,$pMostceleb)
+    {
+        $this->Name = $pName;
+        $this->creator = $pCreator;
+        $this->categorie = $pCategorie;
+        $this->Mostceleb = $pMostceleb;
+    }
 }
