@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\LegendaryCarRepository;
+use Doctrine\bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=LegendaryCarRepository::class)
  */
-class LegendaryCar
+class LegendaryCar extends ServiceEntityRepository
 {
     /**
      * @ORM\Id
@@ -88,5 +88,12 @@ class LegendaryCar
         $this->owner = $owner;
 
         return $this;
+    }
+    function __construct($pName,$pCreator,$pCategorie,$pOwner)
+    {
+        $this->Name = $pName;
+        $this->creator = $pCreator;
+        $this->categorie = $pCategorie;
+        $this->owner = $pOwner ;
     }
 }

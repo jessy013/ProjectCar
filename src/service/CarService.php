@@ -13,9 +13,9 @@ class CarService
     public function __construct(EntityManagerInterface $em)
     {
         $this->_entityManager= $em;
-        $this->addCar(new Car('Mercedes-Benz 300 SL','mercedes benz','sportcar','300 SL de george baud PDG des parfun Carven'));
+        $this->addCar(new Car('Mercedes-Benz 300 SL','Mercedes Benz','sportcar','300 SL de george baud PDG des parfun Carven'));
         $this->addCar(new Car('ford mustange de 1967','Henry Ford','musclecar','ford mustang GT500 eleanor du film 60 second chronos'));
-        $this->addCar(new Car('Lamborghini 350 GT','ferruccio Lamborghini','supersport',' le chanteur Gims et le footballeur Rio Mavuba possèdent la Ferrari 458'));
+        $this->addCar(new Car('Lamborghini 350 GT','Ferruccio Lamborghini','supersport','50 cent possède une lamborghini murcielago roaster'));
         $this->addCar(new Car('nissan GT-R','Makoto Uchida','supercar','la nissan GT-R r34 du film fast and furious'));
         $this->addCar(new Car('toyota GR supra','Akio Toyota','supercar','la toyota sprinter trueno ae86 du manga initial D'));
     }
