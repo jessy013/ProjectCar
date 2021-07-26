@@ -7,7 +7,7 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class CarService
 {
-    private $_entitymanager;
+    private $_entityManager;
     private $_listCar= [];
 
     public function __construct(EntityManagerInterface $em)
