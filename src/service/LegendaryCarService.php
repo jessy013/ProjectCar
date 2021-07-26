@@ -3,7 +3,7 @@ namespace App\Service;
 
 use App\Entity\LegendaryCar;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\EntityManagerInterface;
+
 
 class LegendaryCarService extends ServiceEntityRepository
 {
