@@ -17,11 +17,11 @@ class CarController extends AbstractController
         return $this->render('car/index.html.twig', [
             'controller_name' => 'CarController',
         ]);
-
-        /**
-        *@route("/car/list, name="list_car")
-        */
     }
+        /**
+        *@route("/car/list", name="list_car")
+        */
+
     public function list(CarService $CarService)
     {
         $listCar =$CarService->getlist();

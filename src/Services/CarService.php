@@ -5,7 +5,7 @@ use App\Entity\Car;
 use Doctrine\ORM\EntityManagerInterface;
 
 
-class CarService
+class CarServices
 {
     private $_entityManager;
     private $_listCar= [];
