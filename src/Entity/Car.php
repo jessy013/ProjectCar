@@ -94,6 +94,6 @@ class Car
         $this->name = $pName;
         $this->creator = $pCreator;
         $this->categorie = $pCategorie;
-        $this->Mostceleb = $pMostceleb;
+        $this->mostceleb = $pMostceleb;
     }
 }
