@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Service\CarService;
+use App\Services\CarServices;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -22,9 +23,9 @@ class CarController extends AbstractController
         *@route("/car/list", name="list_car")
         */
 
-    public function list(CarService $CarService)
+    public function list(CarServices $CarServices)
     {
-        $listCar =$CarService->getlist();
+        $listCar =$CarServices->getlist();
         return $this->render('car/list.html.twig',[
             'controller_name' => 'CarController',
             'listcar'=>$listCar
