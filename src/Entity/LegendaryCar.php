@@ -91,7 +91,7 @@ class LegendaryCar extends ServiceEntityRepository
     }
     function __construct($pName,$pCreator,$pCategorie,$pOwner)
     {
-        $this->Name = $pName;
+        $this->name = $pName;
         $this->creator = $pCreator;
         $this->categorie = $pCategorie;
         $this->owner = $pOwner ;
