@@ -4,7 +4,7 @@ namespace App\Services;
 use App\Entity\LegendaryCar;
 
 
-class LegendaryCarService
+class LegendaryCarServices
 {
     private $_listLegendaryCar= [];
 
