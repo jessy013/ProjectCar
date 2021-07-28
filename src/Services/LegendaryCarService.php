@@ -1,11 +1,10 @@
 <?php
-namespace App\Service;
+namespace App\Services;
 
 use App\Entity\LegendaryCar;
-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 
 
-class LegendaryCarService extends ServiceEntityRepository
+class LegendaryCarService
 {
     private $_listLegendaryCar= [];
 
