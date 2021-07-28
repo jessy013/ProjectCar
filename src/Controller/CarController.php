@@ -28,7 +28,7 @@ class CarController extends AbstractController
         $listCar =$CarServices->getlist();
         return $this->render('car/list.html.twig',[
             'controller_name' => 'CarController',
-            'listcar'=>$listCar
+            'listCar'=>$listCar
         ]);
     }
 }
